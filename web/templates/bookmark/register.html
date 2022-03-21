@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+	<style>
+		body{
+			margin: 0;
+			padding: 0;
+			user-select: none;
+		}
+		#leftContent{
+			width: 35%;
+			height: 100vh;
+			background-color: #8278eb;
+			float: left;
+			box-sizing: border-box;
+			position: relative;
+		}
+		.Bicolor{
+			position: absolute;
+			right: -75px;
+		}
+		.Bicolor ul{
+			list-style: none;
+		}
+		.Bicolor ul li{
+			width: 150px;
+			height: 13px;
+			margin-bottom: 13px;
+		}
+		.Bicolor ul li>div:nth-of-type(1){
+			float: left;
+			width: 50%;
+			height: 13px;
+			background-color: white;
+		}
+		.Bicolor ul li>div:nth-of-type(2){
+			float: left;
+			width: 50%;
+			height: 13px;
+			background-color: #8278eb;
+		}
+		.whiteBar{
+			position: absolute;
+			bottom: 0;
+		}
+		.whiteBar ul{
+			list-style: none;
+			margin-left: 20px;
+		}
+		.whiteBar ul li{
+			float: left;
+			width: 13px;
+			height: 200px;
+			background-color: white;
+			margin-left: 45px;
+		}
+		.wz{
+			font-family: '华文行楷';
+			color: white;
+			font-size: 50px;
+			padding:15% 0 0 22%;
+		}
+		#rightContent{
+			box-sizing: border-box;
+			position: relative;
+			width: 65%;
+			height: 100vh;
+			float: left;
+			overflow: hidden;
+		}
+		.ellipse{
+			position: absolute;
+			right: -180px;
+			top: -90px;
+			width: 300px;
+			height: 150px;
+			background-color: #8278eb;
+			border-radius: 50%;
+		}
+		.semicircle{
+			position: absolute;
+			bottom: 60px;
+			right: -50px;
+			width: 80px;
+			height: 80px;
+			border-radius: 50%;
+			background-color: #8278eb;
+		}
+		.register{
+			width: 450px;
+			padding:20% 0 0 25%
+		}
+		input[type="text"],input[type="password"]{
+			border: none;
+			outline: none;
+			width: 450px;
+			height: 50px;
+			font-size: 18px;
+			border-bottom: 2px solid #8278eb;
+		}
+		input[type="submit"]{
+			border: none;
+			outline: none;
+			width: 150px;
+			height: 50px;
+			margin-top: 50px;
+			font-size: 18px;
+			color: white;
+			background-color: #8278eb;
+			cursor: pointer;
+		}
+		.register div{
+			margin-top: 70px;
+			display: inline-block;
+			float: right;
+		}
+		.register div a:nth-of-type(2){
+			text-decoration: none;
+			color: #8278eb;
+		}
+	</style>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<div id="leftContent">
+			<div class="wz">BookMark</div>
+			<div class="Bicolor">
+				<ul>
+					<li>
+						<div></div>
+						<div></div>
+					</li>
+					<li>
+						<div></div>
+						<div></div>
+					</li>
+					<li>
+						<div></div>
+						<div></div>
+					</li>
+				</ul>
+			</div>
+			<div class="whiteBar">
+				<ul>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+			</div>
+		</div>
+		<div id="rightContent">
+			<div class="ellipse"></div>
+			<div class="semicircle"></div>
+			<div class="register">
+				<input type="text" placeholder="用户名" /><br />
+				<input type="text" placeholder="手机号码" /><br />
+				<input type="password" placeholder="密码" /><br />
+				<input type="password" placeholder="再次输入密码" /><br />
+				<input type="submit" value="注册" />
+				<div>
+					<a>已有注册?</a>
+					<a style="cursor: pointer;" href="login.html">立即登录</a>
+				</div>
+			</div>
+		</div>
+		
+	</body>
+</html>
+
