@@ -30,7 +30,7 @@ def UploadFile():
 
 
         if not os.path.exists(root_path + file_path):
-            os.mkdir(file_path)
+            os.mkdir("." + file_path)
 
         ext = file.filename.split(".")[-1]
 
