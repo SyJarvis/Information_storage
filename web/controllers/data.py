@@ -4,11 +4,11 @@
 # @Software : PyCharm
 
 
-from flask import Blueprint,send_from_directory
+from flask import Blueprint, send_from_directory
 from application import app
 route_data = Blueprint('data', __name__)
 
 
 @route_data.route("/<path:filename>")
-def index( filename ):
-    return send_from_directory(  app.root_path ,filename )
+def get_data_file( filename ):
+    return send_from_directory(app.root_path, '/data/files/' + filename)

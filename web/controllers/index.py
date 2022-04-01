@@ -9,6 +9,6 @@ from application import app
 
 route_index = Blueprint("index_page", __name__)
 
-@route_index.route("/<path:filename>")
-def index( filename ):
-    return send_from_directory(  app.root_path ,filename )
+@route_index.route("/")
+def index():
+    return "Hello World"

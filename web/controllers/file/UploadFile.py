@@ -15,12 +15,12 @@ from common.libs.Helper import getFileSalt
 route_file = Blueprint("file_page", __name__)
 
 
-
-
 @route_file.route("/uploadfile", methods=["GET", "POST"])
 def UploadFile():
     if request.method == "GET":
+
         return render_template("file/uploadfile.html")
+    
     elif request.method == "POST":
         resp = {'code': 200, 'msg': 'OK', 'data': {}}
         req = request.files
