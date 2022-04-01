@@ -135,7 +135,6 @@ def write_excel_data(filename, dates):
 
 
 
-dates = get_excel_data("./jobs/21软件7班 早午晚检3.xlsx", 4, 1, 7, 36)
-write_excel_data("./jobs/21软件7班早午晚检表9.xls", dates)
+
 
 

@@ -14,6 +14,3 @@ alter table tb_grade drop foreign key `tb_grade_ibfk_2`;
 Redis文档p
 http://redis.cn/clients.html
 
-
-dates = get_excel_data("./jobs/21软件7班 早午晚检3.xlsx", 4, 1, 7, 36)
-write_excel_data("./jobs/21软件7班早午晚检表9.xls", dates)
